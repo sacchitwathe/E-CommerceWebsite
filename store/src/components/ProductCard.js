@@ -11,7 +11,7 @@ function ProductCard(props) { // props.product is the product we are selling
         <Card>
             <Card.Body>
                 <Card.Title>{product.title}</Card.Title>
-                <Card.Text>${product.price}</Card.Text>
+                <Card.Text>Rs.{product.price}</Card.Text>
                 { productQuantity > 0 ?
                     <>
                         <Form as={Row}>

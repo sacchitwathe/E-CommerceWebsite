@@ -1,10 +1,12 @@
-// sk_test_51LnUKJDM1jwCEz8OJG69szv032rIo4X0WrFMaXrqxu9g8fdohsL1y54JEUhFUKrqoBquVjN3AzpIFyrbN915bgcd00O5hqoGCJ
-// Coffee: price_1LnUTFDM1jwCEz8OGoOSXiSM
-// Sunglasses: price_1LnUTxDM1jwCEz8OAqHYTwKQ
-// Camera: price_1LnUUoDM1jwCEz8OvxIcJ7to
-const express = require('express');
-var cors = require('cors');
-const stripe = require('stripe')('sk_test_51LnUKJDM1jwCEz8OJG69szv032rIo4X0WrFMaXrqxu9g8fdohsL1y54JEUhFUKrqoBquVjN3AzpIFyrbN915bgcd00O5hqoGCJ');
+//sk_test_51N42fLSCHdVx8ak9Nb9IkvAQsUpbwDbxRoUYRtz55mm8gpWwnqWm0FVg2g42SdINUHZgXeyManMYUjseTyqG5uYy00eHLvzJdZ
+
+//coffee; price_1N42kFSCHdVx8ak9onKh9UpD
+//sunglass: price_1N42l8SCHdVx8ak983DGYP4L
+//camera: price_1N42lhSCHdVx8ak9N1scBGAJ
+
+const express=require('express');
+let cors = require('cors');
+const stripe = require('stripe')('sk_test_51N42fLSCHdVx8ak9Nb9IkvAQsUpbwDbxRoUYRtz55mm8gpWwnqWm0FVg2g42SdINUHZgXeyManMYUjseTyqG5uYy00eHLvzJdZ');
 
 const app = express();
 app.use(cors());
@@ -20,7 +22,6 @@ app.post("/checkout", async (req, res) => {
             quantity: 3
         }
     ]
-
     stripe wants
     [
         {
